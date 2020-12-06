@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Layout responsive - Bootstrap" />
+    <meta name="keywords" content="HTML,CSS, Bootstrap" />
+    <meta name="author" content="Roxi Stan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layout responsive - Bootstrap</title>
+
+    <link href="bundles/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bundles/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:ital@1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Source+Code+Pro:ital,wght@1,200&family=Titillium+Web:wght@200;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <div class="wrapper-menu-mobile" id="buttonMenuMobile">
+      <div id="buttonClose">
+        <img src="assets/icon-close.png" alt="icon-close">
+    </div>
+  
+        <h2 class="title-menu">go.arch</h2>
+
+      <div class="menu-mobile-box">
+        <a href="#home">Home</a>
+        <a href="#about-us">About us</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact-us">Contact us</a>
+      </div>
+
+      <div class="icons-menu-mobile">
+        <div class="icons-new"><i class="fab fa-instagram"></i></div>
+        <div class="icons-new"><i class="fab fa-facebook-f"></i></div> 
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid m-0 p-0">
+      <div class="jumbotron img-bg-header mb-0 w-100">
+
+          <nav class="menu-desktop d-flex mr-6 w-40">
+            <a class="nav-item nav-link" href="#home">Home</a>
+            <a class="nav-item nav-link" href="#about-us">About us</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#blog">Blog</a>
+            <a class="nav-item nav-link"  href="#contact-us">Contact us</a>
+          </nav>
+
+          <nav class="menu-mobile" id="buttonOpen">
+            <a><i class="fas fa-bars"></i></a>
+          </nav>
+
+          <h1 class="display-2 mt-5">Projects</h1>
+        </div>
+
+        <div class="box-green">
+          <h2 class="mb-3 display-5 mt-2 text-center">go.arch</h2>
+          <div class="separator ml-4 mb-3"></div>
+          <div class="icons pl-4"><i class="fab fa-instagram"></i></div>
+          <div class="icons pl-4"><i class="fab fa-facebook-f"></i></div>
+        </div>
+     
+
+
+      <section>
+        <div class="images-wrapper row h-100">
+          <div class="images-wrapper-text col-md-4">
+            <img src="assets/concert-hall.jpg" alt="concert-hall" />
+            <div class="top-header ml-3">
+              <span>Concert hall</span>
+              <span>in New york</span>
+            </div>
+            <p class="ml-3">Architecture</p>
+          </div>
+
+          <div class="images-wrapper-text col-md-4">
+            <img src="assets/bedroom-2.jpg" alt="bedroom-2" />
+            <div class="top-header">
+              <span>Modern bedroom</span>
+              <span>in Gorizia</span>
+            </div>
+            <p>Interior</p>
+          </div>
+
+          <div class="images-wrapper-text col-md-4">
+            <img src="assets/hotel.jpg" alt="hotel" />
+            <div class="top-header">
+              <span>Modern hotel</span>
+              <span>in London</span>
+            </div>
+            <p>Architecture</p>
+          </div>
+        
+          <div class="images-wrapper-text col-md-4">
+            <img src="assets/bedroom-1.jpg" alt="bedroom-1" />
+            <div class="top-header ml-3">
+              <span>Modern bedroom</span>
+              <span>in Paris</span>
+            </div>
+            <p class="ml-3">Interior</p>
+          </div>
+
+          <div class="images-wrapper-text col-md-4">
+            <img src="assets/library.jpg" alt="library" />
+            <div class="top-header">
+              <span>Modern library</span>
+              <span>in Chicago</span>
+            </div>
+            <p>Architecture</p>
+          </div>
+
+          <div class="images-wrapper-text col-md-4">
+            <img src="assets/kitchen.jpg" alt="kitchen" />
+            <div class="top-header">
+              <span>Modern kitchen</span>
+              <span>in Bucharest</span>
+            </div>
+            <p>Interior</p>
+          </div>
+        </div>
+      </section>
+
+    
+      <footer class="pb-4">
+        <div class="first-button d-flex justify-content-center"><button type="button" class="btn btn-secondary text-center mt-4 mb-4">More Projects</button></div>
+        <h2 class="text-center"><span>Get</span> in touch</h2>
+
+        <form>
+          <div class="form-wrapper">
+            <div class="form-info">
+
+              <div class="top-side-form">
+                <input required class="input-validation" type="text" name="name_input" id="nameInput" minlength="50" placeholder="Name"/>
+                <input required class="input-validation" type="number" name="phone_input" id="phoneInput" minlength="10" placeholder="Phone"/>
+              </div>
+
+              <div class="bottom-side-form">
+                <input required class="input-validation" type="text" name="email_input" id="emailInput" placeholder="Email"/>
+                <input required class="input-validation" type="text" name="company_input" id="companyInput" placeholder="Company"/>
+              </div>
+            </div>
+
+            <textarea required class="input-validation" id="textarea" placeholder="Message"
+            ></textarea>
+          </div>
+
+          <div class="second-button d-flex justify-content-center"><button class="button-send" type="submit">Send<i class="fas fa-arrow-right"></i></button></div>
+
+        </form>
+      </footer>
+
+
+    </div>
+    <script src="resources/main.js"></script>
+    <script src="bundles/bootstrap/js/bootstrap.js"></script>
+    <noscript>
+      Your browser currently does not support or has JS disabled.
+  </noscript>
+  </body>
+</html>
